@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="sothunhat">
+    <input type="number" id="sothuhai">
+    <button type="button" onclick="cong();" value="cộng">cộng</button>
+    <button type="button" onclick="tru();" value="trừ">trừ</button>
+    <p>Result</p>
+    <p id="kq">0</p>
+<script>
+    function cong(){
+        let mot = document.getElementById("sothunhat").value;
+        let hai = document.getElementById("sothuhai").value;
+        let result = Number(mot)+Number(hai);
+        document.getElementById("kq").innerText=result;
+    }
+    function tru(){
+        let mot = document.getElementById("sothunhat").value;
+        let hai = document.getElementById("sothuhai").value;
+        let result = Number(mot)-Number(hai);
+        document.getElementById("kq").innerText=result;
+    }
+</script>
+</body>
+</html>
