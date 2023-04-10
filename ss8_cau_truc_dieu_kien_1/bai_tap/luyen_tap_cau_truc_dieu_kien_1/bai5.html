@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let diemKiemTra = +prompt('Nhập điểm kiểm tra của học sinh');
+  let diemThiGiuaKi = +prompt('Nhập điểm thi giữa kì');
+  let diemThiCuoiKi = +prompt('Nhập điểm thi cuối kì');
+  let diemTrungBinh = (diemKiemTra+diemThiGiuaKi*2+diemThiCuoiKi*3)/6
+
+  if (diemTrungBinh>=8 && diemTrungBinh<=10) {
+    alert('Học sinh giỏi');
+  } else if (diemTrungBinh<8 && diemTrungBinh >= 6.5) {
+      alert('Học sinh khá');
+  } else if (diemTrungBinh<6.5 && diemTrungBinh>=3.5) {
+      alert('Học sinh trung bình');
+  } else {
+      alert('Ở lại lớp');
+  }
+</script>
+</body>
+</html>

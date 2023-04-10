@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let browser = prompt('input your browser?');
+    // if (browser == 'Edge') {
+    //     alert('we support you ' + browser)
+    // } else if (browser == 'Chorme' || browser == 'Safari' || browser == 'Opera') {
+    //     alert('we also support you ' + browser)
+    // } else {
+    //     alert('we do not support you '+browser)
+    // }
+    switch (browser) {
+        case 'Edge':
+            alert('we support you');
+            break;
+        case 'Chorme':
+        case 'Opera':
+        case 'Safari':
+            alert('we also support you');
+            break;
+        default:
+            alert('we do not support you');
+    }
+</script>
+</body>
+</html>
