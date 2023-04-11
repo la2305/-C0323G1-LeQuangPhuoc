@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Nhập vào số điện nhà bạn sử dụng</div>
+<input id="a" type="number">
+<button onclick="result();">Kết quả</button>
+<a id="kq"></a>
+<script>
+    function result() {
+        let a = +document.getElementById('a').value;
+        if (0<a && a<=50) {
+            document.getElementById('kq').innerHTML = a*1.678+'đ'
+        } else if (51<a && a<=100) {
+            document.getElementById('kq').innerHTML = a*1.734+'đ'
+        } else if (101<a && a<=200) {
+            document.getElementById('kq').innerHTML = a*2.014 + 'đ'
+        } else if (201<a && a<=300) {
+            document.getElementById('kq').innerHTML = a*2.536 + 'đ'
+        } else if (301<a && a<=400) {
+            document.getElementById('kq').innerHTML = a*2.834 + 'đ'
+        } else {
+            document.getElementById('kq').innerHTML = a*2.927 + 'đ'
+        }
+    }
+</script>
+</body>
+</html>

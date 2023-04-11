@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="sothunhat">
+    <input type="number" id="sothuhai">
+    <button onclick="plus();" value="cộng">cộng</button>
+    <button onclick="minus();" value="trừ">trừ</button>
+    <button onclick="multiplication();" value="nhân">nhân</button>
+    <button onclick="division();" value="chia">chia</button>
+    <p>Result</p>
+    <p id="kq">0</p>
+<script>
+    function plus(){
+        let one = document.getElementById("sothunhat").value;
+        let two = document.getElementById("sothuhai").value;
+        let result = Number(one)+Number(two);
+        document.getElementById("kq").innerText=result;
+    }
+    function minus(){
+        let one = document.getElementById("sothunhat").value;
+        let two = document.getElementById("sothuhai").value;
+        let result = Number(one)-Number(two);
+        document.getElementById("kq").innerText=result;
+    }
+    function multiplication(){
+        let one = document.getElementById("sothunhat").value;
+        let two = document.getElementById("sothuhai").value;
+        let result = Number(one)*Number(two);
+        document.getElementById("kq").innerText=result;
+    }
+    function division(){
+        let one = document.getElementById("sothunhat").value;
+        let two = document.getElementById("sothuhai").value;
+        let result = Number(one)/Number(two);
+        document.getElementById("kq").innerText=result;
+    }
+</script>
+</body>
+</html>

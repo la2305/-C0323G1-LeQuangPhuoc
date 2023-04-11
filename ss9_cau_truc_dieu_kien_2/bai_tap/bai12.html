@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = prompt('Nhập vào số tiền bạn muốn gởi vào ngân hàng');
+    let month = prompt('Nhập vào số tháng bạn muốn gởi');
+    let r = 0.06;
+    let n = 12;
+    let t = month/12;
+    let result = money*Math.pow((1+(r/n)),n*t);
+    alert('tiền lãi và gốc bạn nhận được là'+result+'đ');
+</script>
+</body>
+</html>

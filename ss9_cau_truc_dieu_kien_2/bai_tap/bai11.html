@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong = +prompt('Nhập số tiền lương hằng tháng của bạn');
+    let soNguoiPhuThuoc = +prompt('Nhập số người phụ thuộc vào bạn');
+    let tienDongBaoHiemXaHoi = 0.105*tienLuong;
+    let tienMienGiamBanThan = 11000000;
+    let tienThuNhapTinhThue = tienLuong -(soNguoiPhuThuoc*4400000+tienDongBaoHiemXaHoi+tienMienGiamBanThan);
+
+    if (tienThuNhapTinhThue<=0){
+        alert('bạn không phải đóng thuế ');
+    } else if (tienThuNhapTinhThue<=5000000) {
+        alert('số tiền thuế bạn phải đóng là'+tienThuNhapTinhThue*0.05+'đ');
+    } else if (tienThuNhapTinhThue<=10000000) {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.1-250000)+'đ');
+    } else if (tienThuNhapTinhThue<=18000000) {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.15-750000)+'đ');
+    } else if (tienThuNhapTinhThue<=32000000) {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.2-1650000)+'đ');
+    } else  if (tienThuNhapTinhThue<=52000000) {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.25-3250000)+'đ');
+    } else  if (tienThuNhapTinhThue<=80000000) {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.3-5850000)+'đ');
+    } else {
+        alert('số tiền thuế bạn phải đóng là'+(tienThuNhapTinhThue*0.35-9850000)+'đ');
+    }
+</script>
+</body>
+</html>

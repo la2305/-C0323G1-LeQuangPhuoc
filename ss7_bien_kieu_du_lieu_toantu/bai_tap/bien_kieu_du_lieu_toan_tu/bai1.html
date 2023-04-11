@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+    <script>
+        let inputVatLy = prompt('nhập điểm vật lý');
+        let inputHoaHoc = prompt('nhập điểm hóa học');
+        let inputSinhHoc = prompt('nhập điểm sinh học');
+
+        let vatLy = parseInt(inputVatLy);
+        let hoaHoc = parseInt(inputHoaHoc);
+        let sinhHoc = parseInt(inputSinhHoc);
+        let diemTrungBinh = (vatLy+hoaHoc+sinhHoc)/3;
+        let tongDiem = vatLy+hoaHoc+sinhHoc;
+
+        document.write('Điểm trung bình 3 môn= '+diemTrungBinh+'  ');
+        document.write('Tổng điểm 3 môn= '+tongDiem);
+    </script>
+</body>
+</html>
