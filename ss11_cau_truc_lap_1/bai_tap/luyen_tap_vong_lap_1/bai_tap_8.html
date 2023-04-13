@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="handleClick()">Start</button>
+<script>
+    function handleClick() {
+        let guessNumberString = +prompt('Số bạn muốn đoán trong khoản lớn nhất là bao nhiêu?');
+        let randomNumber = Math.floor(Math.random() * (guessNumberString + 1));
+        let guessNumber = +prompt('Nhập số bạn đoán');
+        let count = 0;
+        while (count < 3) {
+            if (guessNumber < randomNumber) {
+                alert('Số bạn đoán bé hơn vui lòng nhập số lớn hơn');
+                guessNumber = +prompt('Nhập số bạn đoán');
+                count++
+            } else if (guessNumber > randomNumber) {
+                alert('Số bạn đoán lớn hơn vui lòng nhập số bé hơn');
+                guessNumber = +prompt('Nhập số bạn đoán');
+                count++
+            } else {
+                alert('Số bạn nhập là chính xác')
+                count = 4;
+            }
+        }
+        if (count === 3) {
+            alert('Đã quá số lần nhập, bạn đã thua cuộc')
+        }
+    }
+</script>
+</body>
+</html>

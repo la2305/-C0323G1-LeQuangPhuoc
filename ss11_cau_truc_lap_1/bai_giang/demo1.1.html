@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //B1: kiểm tra n có phải là snt?
+  // B2: in ra 20 snt đầu tiên => trong dãy số tự nhiên
+  let number = 0;// đếm số lượng số nguyên tố tìm thấy
+  let n = 2;
+  while (number<20){
+    let count = 0;// đếm số lượng chia hết
+    for (let i = 2; i < n; i++) {
+      // i=2 => 3,4,5,
+      if (n % i == 0) {
+        count++;
+      }
+    }
+    // count ==0
+    if (count == 0) {
+      number++;
+      document.write(n+ ",");
+    }
+    n++;
+  }
+</script>
+</body>
+</html>
