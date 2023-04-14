@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập vào số các phần tử có trong mảng');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('Nhập vào các phần tử có trong mảng');
+    }
+    let first = 0;
+    let last = arr.length - 1;
+    let b;
+    while (first < last) {
+        b = arr[first];
+        arr[first] = arr[last];
+        arr[last] = b;
+        first++;
+        last--;
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

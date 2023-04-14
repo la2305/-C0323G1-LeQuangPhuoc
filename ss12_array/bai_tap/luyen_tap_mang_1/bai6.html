@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt('Nhập vào các số có trong mãng');
+    }
+    let v = +prompt('Nhập vào số mà bạn muốn biết có nằm trong mãng hay không?');
+    for (let i = 0; i < 10; i++) {
+        if (v === arr[i]) {
+            document.write('V is in the array');
+            break;
+        } else {
+            document.write('V is not in the array');
+            break;
+        }
+    }
+</script>
+</body>
+</html>

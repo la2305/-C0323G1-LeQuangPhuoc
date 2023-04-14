@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [-99, -74, -22, -35, -346, -23, 224, 0, 25, 35, 63, 234];
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            total++;
+            document.write(arr[i] + ',');
+        }
+    }
+    document.write('Số nguyên âm có trong chuỗi là: ' + total);
+</script>
+</body>
+</html>
