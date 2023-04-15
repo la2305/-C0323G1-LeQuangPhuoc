@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="fruits" type="text">
+<button onclick="search();">Tìm kiếm</button>
+<script>
+    function search() {
+        let english = ["apple", "banana", "coconut", "mango"];
+        let vietnamese = ["táo", "chuối", "dừa", "xoài"];
+        for (let i = 0; i <= english.length; i++) {
+            if (document.getElementById('fruits').value === english[i]) {
+                english[i] = vietnamese[i];
+                document.write(english[i]);
+            }
+        }
+        alert('không tìm thấy kết quả');
+    }
+
+    //     for (let i = 0; i<english.length;i++) {
+    //         for (let j = 0; j<vietnamese.length;j++) {
+    //             if (english[i]=vietnamese[j]) {
+    //                 document.write(vietnamese[j]);
+    //                 break;
+    //             } else {
+    //                 document.write('không tìm thấy');
+    //             }
+    //         }
+    //     }
+    // }
+</script>
+</body>
+</html>

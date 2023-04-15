@@ -7,16 +7,17 @@
 <body>
 <script>
     let myColor = ["Red", "Green", "White", "Black"];
-    myColor.toString();
-    document.write(myColor)
+    let arr = "";
+    // myColor.toString();
+    // document.write(myColor)
     // myColor.join( '+' );
     // document.write(myColor)
     // myColor.join();
     // document.write(myColor)
-    // for(let i = 0; i<myColor.length; i++) {
-    //     arr += myColor[i] + ',';
-    // }
-    // document.write(arr)
+    for (let i = 0; i < myColor.length; i++) {
+        arr += myColor[i] + ',';
+    }
+    document.write(arr)
 </script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let language = [
+          'Java script',
+          'php',
+          'ruby',
+  ]
+
+  let languagge2 = [
+    'alo0000',
+    'conket',
+  ]
+
+  //Đổi từ mảng thành chuỗi;
+  language.toString();
+  document.write(language+'<br><br>')
+
+  //THÊM KÍ TỰ VÀO TRONG CHUỖI KHÔNG DỮ CHUỖI
+  document.write(language.join('*') +'<br><br>');
+  document.write(language+'<br><br>');
+
+  //bỏ phần tử cuối của mãng
+  language.pop();
+  document.write(language+'<br><br>')
+
+  //thêm phần tử cuối của mảng
+  language.push('alo','conket'+'<br><br>');
+  document.write(language);
+
+  //bỏ phần tử đầu tiên của mảng;
+  language.shift();
+  document.write(language+'<br><br>');
+
+  //thêm phần tử vào đầu mảng;
+  language.unshift('cailonxinhdep');
+  document.write(language+'<br><br>');
+
+  //xóa phẩn tử ở trong mảng;
+  language.splice(1, 2, 'ditnhau','dunhauquasuong');
+  document.write(language+'<br><br>');
+
+  //cắt một vài phần tử trong mảng;
+  language.slice(1,2);
+
+
+
+  // NỐI CHUỖI NHƯNG KHÔNG DỮ CHUỖI SAU KHI NỐI
+  document.write(language.concat(languagge2)+'<br><br>')
+
+  document.write(language+'<br><br>');
+
+  document.write(languagge2+'<br><br>');
+
+
+</script>
+</body>
+</html>

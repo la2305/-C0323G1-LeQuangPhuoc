@@ -7,13 +7,24 @@
 <body>
 <script>
     let arr = [];
-    let a;
-    let b;
+    // let a;
+    // let b;
     for (let i = 0; i < 10; i++) {
         arr[i] = +prompt('Nhập vào các số có trong mãng');
     }
-    arr.sort(function(a, b){return b - a})
-    document.write(arr)
+    for (let j = 0; j < arr.length; j++) {
+        for (let k = 1; k < arr.length; k++) {
+            arr[0] = max;
+            if (max < arr[k]) {
+                arr[k] = max;
+            }
+        }
+    }
+
+    //cách 2
+
+    // arr.sort(function(a, b){return b - a})
+    // document.write(arr)
 </script>
 </body>
 </html>
