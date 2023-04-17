@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập vào chuỗi bạn cần đếm số kí tự');
+    let arr1 = str.split('');
+    let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let arr2 = abc.split('');
+    let total = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                total++;
+            }
+        }
+    }
+    document.write('Số từ có trong chuỗi là: ' + total);
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập vào số ký tự có trong mảng');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr [i] = prompt('Nhập vào ký tự thứ ' + i + ' có trong mảng');
+    }
+    for (let i = 0; i < n; i++) {
+        if (arr[i] === '-') {
+            arr.splice(i, 1, '_');
+        }
+    }
+    document.write(arr);
+
+
+    // let n = +prompt('Nhập vào số phần tử có trong mảng');
+    // let arr = [];
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = prompt('nhập vào các kí tự có trong mảng thứ ' + i);
+    // }
+    // for (let i = 0; i < arr.length; i++) {
+    //     let arr1 = arr[i].split('')
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] === '-') {
+    //             arr1.splice(j, 1, '_');
+    //         }
+    //     }
+    //     arr[i] = arr1.join("");
+    // }
+    // document.write(arr);
+
+
+    //
+    // xóa phẩn tử ở trong mảng;
+    // language.splice(1, 2, 'ditnhau','dunhauquasuong');
+    // document.write(language+'<br><br>');
+
+
+    // let n = +prompt('Nhập vào số phần tử có trong mảng');
+    // let arr = [];
+    // let newstr ="";
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = prompt('nhập vào các kí tự có trong mảng thứ ' + i);
+    // }
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (i!==0) {
+    //         newstr += ',';
+    //     }
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] !== '-') {
+    //             newstr += arr[i][j];
+    //         } else if ( arr[i][j] === '-' ) {
+    //             newstr += '_';
+    //         }
+    //     }
+    // }
+    // let newarr = newstr.split(',')
+    // document.write(newarr);
+
+</script>
+</body>
+</html>

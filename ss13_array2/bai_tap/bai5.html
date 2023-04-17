@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = prompt('Nhập vào chuỗi thứ nhất');
+    let arr1 = str1.split('');
+    let str2 = prompt('Nhập vào chuỗi thứ hai');
+    let arr2 = str2.split('');
+    let a;
+    if (arr1.length === arr2.length) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] === arr2[i]) {
+                a = 1;
+            } else {
+                a = -1;
+            }
+        }
+        if (a === 1) {
+            document.write('2 chuỗi giống nhau');
+        } else if (a === -1) {
+            document.write('2 chuỗi không giống nhau');
+        }
+    } else {
+        document.write('2 chuỗi không giống nhau');
+    }
+</script>
+</body>
+</html>

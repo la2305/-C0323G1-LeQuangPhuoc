@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const animals = [
+        {
+            id: 1,
+            name: "cat",
+            size: "small"
+        },
+        {
+            id: 2,
+            name: "dog",
+            size: "small"
+        }
+    ]
+    var newAnimals = animals.map(function (animal) {
+        if (animal.id === 1) {
+            animal.name = "python";
+        }
+        return animal;
+    });
+    console.log(newAnimals);
+
+    //** index of: lấy ra vị trí của phần tử trong mảng;
+
+    // var a =["code"];
+    // var b = ["gym"];
+    // var c = a.concat(b);
+    // console.log(c);
+    //
+    // var arrs = [
+    //     {
+    //         id:1,
+    //         name:"Nguyen Van A"
+    //     },
+    //     {
+    //         id:2,
+    //         name: "Nguyen Van B"
+    //     }
+    // ]
+    // var arrs2 = [
+    //     {
+    //         id: 3,
+    //         name: 'Nguyen Van C'
+    //     },
+    //     {
+    //         id:4,
+    //         name: "Nguyen Van D"
+    //     }
+    // ]
+    // var newarrs = arrs.concat(arrs2);
+    // console.log(newarrs)
+
+    // //**
+    // var arrs = ["code", "gym", "vn"];
+    // arrs.splice(1, 2);
+    // document.write(arrs);
+    // var students = [
+    //     {
+    //         id: 1,
+    //         name: "Nguyen Van A",
+    //         address: "Ha Noi"
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "Nguyen Van B",
+    //         address: "Hai Phong"
+    //     }
+    // ]
+    // for (let i = 0; i < students.length; i++) {
+    //     if (students[i].id === 2) {
+    //         students.splice(i, 1);
+    //     }
+    // }
+    // console.log(students);
+    //
+    //**
+    // var arrs = ["code"];
+    // arrs.push("gym");
+    // document.write(arrs);
+    //
+    // var students = [];
+    // var student = {
+    //     id: 1,
+    //     name: "nguyen van a",
+    //     address: "ha noi",
+    // }
+    // students.push(student);
+    // console.log(students)
+
+    //**
+    // let array = [1, 5, 7, 8, 9, 15, 8];
+    // let evenNumber = "";
+    // let oddNumber = "";
+    // let total = 0;
+    // let ave;
+    // let u = 0;
+    // let multiplication = 1;
+
+
+    //** tổng 3 số cuối
+    // for (let i = (array.length-3); i < array.length; i++) {
+    //     total = total+array[i];
+    // }
+    // document.write(total);
+
+
+    //** trùng bình các số chia hết cho 5
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i]%5===0) {
+    //         total += array[i];
+    //         u++;
+    //     }
+    // }
+    // ave = (total / u);
+    // document.write(ave);
+
+    // ** in các số chẳn lẻ
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i] % 2 === 0) {
+    //         evenNumber += array[i] + ' , ';
+    //     } else {
+    //         oddNumber += array[i] + ', ';
+    //     }
+    // }
+    // document.write(evenNumber + '<br>');
+    // document.write(oddNumber);
+    // ** in ra các số lớn hơn hoặc bằng 5 của mảng
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i] >= 5) {
+    //         console.log(array[i]);
+    //     }
+    // }
+    //
+</script>
+</body>
+</html>

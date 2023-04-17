@@ -8,15 +8,16 @@
 <script>
     let s1 = 0;
     let s2 = 1;
-    let fibonacci;
+    let fibonacci = 0;
     let total = 0;
     for (let i = 0; i < 20; i++) {
         fibonacci = s1 + s2;
         document.write(fibonacci + ',');
         s1 = s2;
         s2 = fibonacci;
-        total += fibonacci
-    } document.write('Tổng 20 số fibonacci đầu tiên là: ' + total)
+        total += fibonacci;
+    }
+    document.write('<br>'+'Tổng 20 số fibonacci đầu tiên là: ' + total)
 </script>
 </body>
 </html>
