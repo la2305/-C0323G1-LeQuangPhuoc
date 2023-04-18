@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let name = prompt('Nhập vào tên của ngôi sao');
+    checkStar(name);
+
+    function checkStar(name) {
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] === name) {
+                return alert('ngôi sao ' + name +' thuộc chòm sao '+ array2[i]);
+            }
+        }
+        return alert('ngôi sao bạn nhập không thuộc bất cứ chòm sao nào');
+    }
+</script>
+</body>
+</html>
