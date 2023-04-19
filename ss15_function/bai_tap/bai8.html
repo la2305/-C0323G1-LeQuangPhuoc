@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let array = [];
+    let arr = [];
     let n = +prompt('Nhập vào số phần tử có trong mảng');
     for (let i = 0; i < n; i++) {
-        array[i] = +prompt('Nhập vào các số nguyên có trong mảng');
+        arr[i] = +prompt('Nhập vào các số nguyên có trong mảng');
     }
+
     function arrange(array) {
         let first = 0;
-        let last = (array.length - 1);
+        let last = array.length - 1;
         let b;
         while (first < last) {
             b = array[first];
@@ -23,7 +24,9 @@
             last--;
         }
     }
-    alert(arrange(array);
+
+    arrange(arr);
+    document.write(arr);
 </script>
 </body>
 </html>

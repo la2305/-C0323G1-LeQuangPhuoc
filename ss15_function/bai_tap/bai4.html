@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demo function</title>
+    <title></title>
 </head>
 <body>
 <script>
-    number = prompt('nhập vào bất kì thứ gì bạn muốn');
-
+    let number = prompt('nhập vào bất kì thứ gì bạn muốn');
+    check(number);
     function check(n) {
-        isNaN(n)
+        if (!isNaN(n)){
+            alert(n+' là kí tự số');
+        } else {
+            alert(n+' không phải là kí tự số');
+        }
     }
-    alert(check(number));
 </script>
 </body>
 </html>
-
-!isNaN(numb)

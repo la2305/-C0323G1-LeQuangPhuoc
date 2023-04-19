@@ -7,15 +7,17 @@
 <body>
 <script>
     let number = +prompt('Nhập vào số nguyên bạn muốn tính giai thừa');
+
     function factorial(n) {
         let total = 1;
         for (let i = 1; i <= n; i++) {
             total = total * i;
         }
-        return total
+        return total;
     }
+
     let result = factorial(number);
-    alert('Giai thừa của '+ number +' là: '+result);
+    alert('Giai thừa của ' + number + ' là: ' + result);
 </script>
 </body>
 </html>
