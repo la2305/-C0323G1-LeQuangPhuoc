@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập vào độ dài của mảng');
+    let arr = [];
+    let a;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('nhập vào số thứ:' + i);
+    }
+    document.write(arr);
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] % i === 0) {
+            a = 1;
+        } else {
+            a = -1;
+            break;
+        }
+    }
+    if (a === 1) {
+        alert('ok');
+    } else if ( a===-1) {
+        alert('no');
+    }
+</script>
+</body>
+</html>

@@ -13,12 +13,16 @@
     let v = +prompt('Nhập vào số mà bạn muốn biết có nằm trong mãng hay không?');
     for (let i = 0; i < 10; i++) {
         if (v === arr[i]) {
-            document.write('V is in the array');
+            a = 1;
             break;
         } else {
-            document.write('V is not in the array');
-            break;
+            a = -1;
         }
+    }
+    if (a === 1) {
+        document.write('V is in the array');
+    } else if (a === -1) {
+        document.write('V is not in the array');
     }
 </script>
 </body>
