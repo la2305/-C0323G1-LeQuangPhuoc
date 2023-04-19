@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    number1 = +prompt('Nhập vào số thứ nhất');
+    number2 = +prompt('Nhập vào số thứ hai');
+    function swap(a,b) {
+        let c;
+        c = a;
+        a = b;
+        b = c;
+        return [a,b];
+    }
+    alert(swap(number1,number2));
+</script>
+</body>
+</html>

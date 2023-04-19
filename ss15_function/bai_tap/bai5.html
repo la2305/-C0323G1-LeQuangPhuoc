@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt('nhập số nguyên thứ nhất');
+    let number2 = +prompt('nhập số nguyên thứ hai');
+    let number3 = +prompt('nhập số nguyên thứ ba');
+    function compare(a, b, c) {
+        if (a<b) {
+            if (a<c) {
+                alert(a+' là số nhỏ nhất');
+            } else {
+                alert(c+' là số nhỏ nhất');
+            }
+        } else {
+            if (b<c) {
+                alert(b+' là số nhỏ nhất');
+            } else {
+                alert(c+' là số nhỏ nhất');
+            }
+        }
+    }
+    compare(number1,number2,number3);
+</script>
+</body>
+</html>

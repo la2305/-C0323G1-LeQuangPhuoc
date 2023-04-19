@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào số nguyên mà bạn muốn tính giai thừa</p>
+<input type="text" id="number" placeholder="nhập vào đây">
+<button onclick="document.getElementById('result').innerHTML = factorial(+document.getElementById('number').value);">Result</button>
+<b id="result"></b>
+<script>
+    function factorial(n) {
+        let total = 1;
+        for (let i = 1; i <= n; i++) {
+            total = total * i;
+        }
+        return total;
+    }
+</script>
+</body>
+</html>
