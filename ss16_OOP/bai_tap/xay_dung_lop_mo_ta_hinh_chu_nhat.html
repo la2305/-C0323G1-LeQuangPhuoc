@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<canvas id="rec"></canvas>
+<script>
+    class rectangle {
+        constructor(w, h) {
+            this.witdh = w;
+            this.height = h;
+        }
+
+        getArea() {
+            return this.witdh * this.height;
+        }
+
+        getPerimeter() {
+            return (this.witdh + this.height) * 2;
+        }
+
+        draw() {
+            let test = document.getElementById('rec');
+            let ctx = test.getContext('2d');
+            ctx.fillStyle = '#36933d';
+            ctx.fillRect(10, 10, this.witdh, this.height);
+        }
+    }
+
+    let result = new rectangle(50, 100);
+    document.write('<br>' + ' Diện tích: ' + result.getArea() + '<br>' + 'Chu vi: ' + result.getPerimeter());
+    result.draw();
+</script>
+</body>
+</html>

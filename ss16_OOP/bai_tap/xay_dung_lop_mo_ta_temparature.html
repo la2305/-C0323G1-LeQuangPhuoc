@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature {
+        constructor(c) {
+            this.Celsius = c;
+        }
+        doF() {
+            return (this.Celsius*1.8 +32);
+        }
+        doKevin() {
+            return (this.Celsius+273.15);
+        }
+    }
+    let a = new temperature(25);
+    alert(a.doF());
+    alert(a.doKevin());
+</script>
+</body>
+</html>
