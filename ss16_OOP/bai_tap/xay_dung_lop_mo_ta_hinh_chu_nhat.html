@@ -8,7 +8,7 @@
 <body>
 <canvas id="rec"></canvas>
 <script>
-    class rectangle {
+    class Rectangle {
         constructor(w, h) {
             this.witdh = w;
             this.height = h;
@@ -30,7 +30,7 @@
         }
     }
 
-    let result = new rectangle(50, 100);
+    let result = new Rectangle(50, 100);
     document.write('<br>' + ' Diện tích: ' + result.getArea() + '<br>' + 'Chu vi: ' + result.getPerimeter());
     result.draw();
 </script>
