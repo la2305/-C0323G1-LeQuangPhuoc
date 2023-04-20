@@ -8,13 +8,13 @@
 <script>
     class Temperature {
         constructor(c) {
-            this.Celsius = c;
+            this.celsius = c;
         }
         doF() {
-            return (this.Celsius*1.8 +32);
+            return (this.celsius*1.8 +32);
         }
         doKevin() {
-            return (this.Celsius+273.15);
+            return (this.celsius+273.15);
         }
     }
     let a = new Temperature(25);
