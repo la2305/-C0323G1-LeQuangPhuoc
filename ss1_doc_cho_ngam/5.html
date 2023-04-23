@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(dai,rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        tinhDienTich() {
+            document.write((this.dai*this.rong)) ;
+        }
+        tinhChuVi() {
+            document.write((this.dai*this.rong)*2);
+        }
+    }
+    let hinhchunhat = new Rectangle(20,10);
+    hinhchunhat.tinhDienTich();
+    hinhchunhat.tinhChuVi();
+</script>
+</body>
+</html>

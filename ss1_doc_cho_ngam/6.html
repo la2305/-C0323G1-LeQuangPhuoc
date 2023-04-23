@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        getWeigth() {
+            return this.weight;
+        }
+
+        decrease() {
+            return this.weight--;
+        }
+
+        isEmpty() {
+            return (this.weight <= 0);
+
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName() {
+            this.name = name;
+        }
+
+        isMale() {
+            return (this.gender === 1);
+
+        }
+
+        eat(apple) {
+            (apple.decrease());
+            if (this.checkApple(apple)) {
+                return this.weight++;
+            } else {
+                document.write("Táo đã hết");
+            }
+        }
+
+        setGender() {
+            if (this.isMale()) {
+                return "Male";
+            } else {
+                return "Female";
+            }
+        }
+
+        sayHi() {
+            return ('xin chào, tôi là ' + this.name);
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        checkApple(apple) {
+            return !apple.isEmpty();
+        }
+    }
+
+    let adam = new Human("adam", 1, 60);
+    let eva = new Human("eva", 2, 50);
+    let appleA = new Apple();
+    document.write(adam.sayHi() + "<br>");
+    document.write("cân nặng của tôi là " + adam.getWeight() + "<br>");
+    document.write("Giới tính là " + adam.setGender() + "<br>");
+
+    document.write(eva.sayHi() + "<br>");
+    document.write("cân nặng của tôi là " + eva.getWeight() + "<br>");
+    document.write("Giới tính là " + eva.setGender() + "<br>");
+    document.write("Câu chuyện bắt đầu " + "<br>")
+
+    while (appleA.isEmpty() !== true) {
+        document.write(adam.getName() + " ăn táo " + "<br>");
+        adam.eat(appleA);
+        document.write("Quả táo còn ");
+        document.write(appleA.getWeigth() + " đơn vị " + "<br>");
+        document.write("khối lượng của adam bây giờ là ");
+        document.write(adam.getWeight() + " đơn vị " + "<br>");
+
+        document.write(eva.getName() + " ăn táo" + "<br>");
+        eva.eat(appleA);
+        document.write("Quả táo còn ")
+        document.write(appleA.getWeigth() + " đơn vị " + "<br>");
+        document.write("khối lượng của eva bây giờ là ");
+        document.write(eva.getWeight() + " đơn vị " + "<br>");
+    }
+
+
+</script>
+</body>
+</html>

@@ -10,7 +10,6 @@
         constructor() {
             this.weight = 10;
         }
-
         getWeigth() {
             return this.weight;
         }
@@ -35,31 +34,55 @@
             this.weight = weight;
         }
 
+        getName() {
+            return this.name;
+        }
+
+        setName() {
+            this.name = name;
+        }
+
+        isMale() {
+            if (this.gender === 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
         eat(apple) {
-            if (this.checkApple(apple)) {
+            if (this.checkApple(apple)){
                 apple.decrease();
                 this.weight++;
             }
         }
 
+        setGender() {
+            if (this.isMale()) {
+                return "Male";
+            } else {
+                return "Female";
+            }
+        }
 
         getWeight() {
             return this.weight;
         }
 
+        setWeight() {
+            this.weight = weight;
+        }
 
         checkApple(apple) {
             return !apple.isEmpty()
         }
-
-        say(str) {
-            console.log(this.name + " : " + str);
+        say(str){
+            console.log(this.name + " : "+str);
         }
     }
-
     let tao = new Apple();
-    let human1 = new Human("Eva", "Female", 40);
-    let human2 = new Human("Adam", "Male", 50);
+    let human1 = new Human("Eva","Female",40);
+    let human2 = new Human("Adam","Male",50);
     human1.say("hello Adam");
     human2.say("chào em ")
     human2.say("a co tao em an khong")
@@ -73,6 +96,8 @@
     console.log(tao.getWeigth());
     console.log(human1.getWeight());
     console.log(human2.getWeight());
+
+
 </script>
 </body>
 </html>
