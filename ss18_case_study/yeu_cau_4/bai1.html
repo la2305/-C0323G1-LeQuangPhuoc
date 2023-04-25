@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt('Nhập vào 1 chuỗi');
+    chuanHoaChuoi(n);
+
+    function chuanHoaChuoi(str) {
+        str = str.toLowerCase();
+        let arr = str.split(' ');
+        let array = [];
+        let string = "";
+        let r = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] !== "") {
+                array.push(arr[i]);
+            }
+        }
+        for (let i = 0; i < array.length; i++) {
+            string = array[i][0].toUpperCase() + array[i].slice(1);
+            r.push(string);
+        }
+        let a = r.join(' ');
+        document.write(a + '<br>');
+
+
+        let b = a.split(' ');
+        max = b[0].length;
+        for (let i = 1; i < b.length; i++) {
+            if (b[i].length>max) {
+                max = b[i].length;
+            }
+        }
+        for (let i = 0; i < b.length; i++) {
+            if (max===b[i].length) {
+                document.write('Từ dài nhất trong chuỗi bạn nhập vào là: '+b[i]);
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

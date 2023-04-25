@@ -7,15 +7,35 @@
 <body>
 <script>
 
-    function logger(firts,last) {
+    function makeCounter() {
+        let counter = 0;
 
+        function increase() {
+            return ++counter;
+        }
 
-
+        return increase;
     }
-    logger('son','dang'+'<br>');
-    logger('alo','aloconket'+'<br>');
-    logger('dm','alo');
-    console.log(firts,last);
+    let a = makeCounter();
+
+    console.log(a());
+    console.log(a)();
+    console.log(a());
+    console.log(a());
+
+
+
+
+
+    // function logger(firts,last) {
+    //
+    //
+    //
+    // }
+    // logger('son','dang'+'<br>');
+    // logger('alo','aloconket'+'<br>');
+    // logger('dm','alo');
+    // console.log(firts,last);
 </script>
 </body>
 </html>

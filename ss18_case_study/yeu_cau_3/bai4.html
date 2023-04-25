@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    do {
+        var typeOfWater = +prompt('Nhập vào loại nước bạn muốn mua theo số thứ tự bên dưới' + '1.cafe' + '2.cam vắt' + '3.nước ép cà rốt' + '4.nước ép cà chua' + '5.nước lọc' + '6.nước dừa' + '7.thoát gọi món');
+        switch (typeOfWater) {
+            case 1:
+                n = +prompt('cà phê có giá 10k, nhập vào số lượng cà phê bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 10000 + 'đ');
+                break;
+            case 2:
+                n = +prompt('cam vắt có giá 20k, nhập vào số lượng cam vắt bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 20000 + 'đ');
+                break;
+            case 3:
+                n = +prompt('nước ép cà rốt có giá 25k, nhập vào số lượng nước ép cà rốt bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 25000 + 'đ');
+                break;
+            case 4:
+                n = +prompt('nước ép cà chua có giá 25k, nhập vào số lượng nước ép cà chua bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 25000 + 'đ');
+                break;
+            case 5:
+                n = +prompt('nước lọc có giá 5k, nhập vào số lượng nước lọc bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 5000 + 'đ');
+                break;
+            case 6:
+                n = +prompt('nước dừa có giá 15k, nhập vào số lượng nước dừa bạn muốn');
+                alert('Số tiền bạn phải trả là: ' + n * 15000 + 'đ');
+                break;
+        }
+    } while (typeOfWater !== 7)
+</script>
+</body>
+</html>

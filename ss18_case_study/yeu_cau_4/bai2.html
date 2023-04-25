@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = "cabca";
+    let array2 = [];
+    let total = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array2.includes(array1[i])===false){
+            array2.push(array1[i]);
+            total = total +1;
+        }
+    }
+    document.write('có '+total+' kí tự khác nhau là: '+ array2);
+</script>
+</body>
+</html>
