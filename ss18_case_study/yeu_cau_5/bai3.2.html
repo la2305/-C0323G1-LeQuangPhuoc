@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập vào số phần tử có trong mảng');
+    let m = +prompt('Nhập vào số phần tử con có trong mảng vừa nhập');
+    inputArray(n, m);
+
+    function inputArray(n, m) {
+        let array = new Array(n);
+        for (let i = 0; i < n; i++) {
+            array[i] = new Array(m);
+            for (let j = 0; j < array[i].length; j++) {
+                array[i][j] = +prompt('Nhập vào phần tử thứ ' + i + ':' + j);
+            }
+        }
+
+        function maxOfArray() {
+            let max = array[0][0];
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < array[i].length; j++) {
+                    if (array[i][j] > max) {
+                        max = array[i][j];
+                    }
+                }
+            }
+            return max;
+        }
+
+        alert(maxOfArray());
+
+        function minOfArray() {
+            let min = array[0][0];
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < array[i].length; j++) {
+                    if (array[i][j] < min) {
+                        min = array[i][j];
+                    }
+                }
+            }
+            return min;
+        }
+
+        alert(minOfArray());
+    }
+</script>
+</body>
+</html>

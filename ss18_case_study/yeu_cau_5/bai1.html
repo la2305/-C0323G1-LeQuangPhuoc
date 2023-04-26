@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    n = +prompt('Nhập số hàng');
+    m = +prompt('Nhập số cột');
+    alert(sumOfEvenNumber(n,m));
+    function sumOfEvenNumber(n, m) {
+        let arr = new Array(n);
+        for (let i = 0; i < n; i++) {
+            arr[i] = new Array(m);
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = +prompt('Nhập phần tử thứ ' + i + ':' + j);
+            }
+        }
+        let total = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if ((arr[i][j]) % 2===0) {
+                    total = total + arr[i][j];
+                }
+            }
+        }
+        return(total);
+    }
+</script>
+</body>
+</html>
