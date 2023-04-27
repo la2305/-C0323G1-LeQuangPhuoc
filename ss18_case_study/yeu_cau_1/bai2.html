@@ -9,8 +9,8 @@
     do {
         n = prompt('nhập vào 1 ký tự duy nhất');
     } while (n.length >= 2 || n.length === 0);
-    arr1 = ['b', 'c', 'd', 'f', 'g', 'h', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'];
-    arr2 = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+    let arr1 = ['b', 'c', 'd', 'f', 'g', 'h', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'];
+    let arr2 = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
     let a = 0;
     for (let i = 0; i < arr1.length; i++) {
         if (n === arr1[i]) {
@@ -26,8 +26,6 @@
     } else if (a === 0) {
         alert('Kí tự bạn nhập không phải là chữ cái tiếng anh');
     }
-
-
 
     // switch (n) {
     //     case 'o':

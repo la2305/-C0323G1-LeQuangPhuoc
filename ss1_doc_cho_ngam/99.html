@@ -23,13 +23,15 @@
         document.getElementById("productName").value = "";
         display();
     }
+
     function deleteProduct(index) {
-        let conf = confirm("Bạn có muốn xoá sản phẩm "+ productList[index])
-        if (conf){
-            productList.splice(index,1);
+        let conf = confirm("Bạn có muốn xoá sản phẩm " + productList[index])
+        if (conf) {
+            productList.splice(index, 1);
         }
         display();
     }
+
 
 
     function display() {

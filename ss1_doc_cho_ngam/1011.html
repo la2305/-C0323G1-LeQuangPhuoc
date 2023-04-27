@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" id="input">
+    <select id="from">
+        <option>VND</option>
+        <option>USD</option>
+    </select>
+    <select id="to">
+        <option>VND</option>
+        <option>USD</option>
+    </select>
+    <button type="button" onclick="chuyendoi();">chuyển đổi</button>
+    <b id="result"></b>
+</form>
+<script>
+    function chuyendoi() {
+        let tien = document.getElementById('input').value;
+        let from = document.getElementById('from').value;
+        let to = document.getElementById('to').value;
+        if (from==='VND' && to==='VND') {
+            document.getElementById('result').innerText=tien+'Đ';
+        } else if (from==='VND'&& to ==='USD') {
+            document.getElementById('result').innerText=tien/23000+'USD';
+        } else if (from==='USD'&& to==='VDN') {
+            document.getElementById('result').innerText=tien*23000+'Đ';
+        } else {
+            document.getElementById('result').innerText=tien+'USD';
+        }
+    }
+
+</script>
+</body>
+</html>

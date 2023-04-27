@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<button onclick="xoaChuyenBay()">xóa chuyến bay</button>
+<button onclick="themChuyenBay()">thêm chuyến bay</button>
+<br><br>
+<table id="danhSach" border="1" cellspacing="0"></table>
+</body>
+</html>
+<script>
+    class ChuyenBay {
+        constructor(machuyenBay, ngayBay, gioBay, noiDi, noiDen) {
+            this.machuyenBay = machuyenBay;
+            this.ngayBay = ngayBay;
+            this.gioBay = gioBay;
+            this.noiDi = noiDi;
+            this.noiDen = noiDen;
+        }
+
+        getMachuyenBay() {
+            return this.machuyenBay;
+        }
+
+        getNgayBay() {
+            return this.ngayBay;
+        }
+
+        getGioBay() {
+            return this.gioBay;
+        }
+
+        getNoiDi() {
+            return this.noiDi;
+        }
+
+        getNoiDen() {
+            return this.noiDen;
+        }
+
+        setMachuyenBay(value) {
+            this.machuyenBay = value;
+        }
+
+        setNgayBay(value) {
+            this.ngayBay = value;
+        }
+
+        setGioBay(value) {
+            this.gioBay = value;
+        }
+
+        setNoiDi(value) {
+            this.noiDi = value;
+        }
+
+        setNoiDen(value) {
+            this.noiDen = value;
+        }
+    }
+
+    let danhSachChuyenBay = [];
+    let chuyenBay1 = new ChuyenBay("CB01", "12/12/2022", "18h", "Tp.DaNang", "Tp.HCM");
+    let chuyenBay2 = new ChuyenBay("CB02", "10/09/2022", "8h", "Tp.HCM", "Tp.DaNang");
+    let chuyenBay3 = new ChuyenBay("CB03", "10/07/2022", "2h", "Tp.HCM", "Tp.DaNang");
+    let chuyenBay4 = new ChuyenBay("CB04", "10/05/2022", "12h", "Tp.HCM", "Tp.DaNang");
+    danhSachChuyenBay.push(chuyenBay1, chuyenBay2, chuyenBay3, chuyenBay4);
+
+    function hienThiDanhSach() {
+        let danhSach = `<tr style="background: hotpink"><th width="50px">STT</th><th width="150px">Mã chuyến bay</th><th width="150px">Ngày bay</th>
+<th width="150px">Giờ bay</th><th width="150px">Nơi đi</th width="150px"><th width="150px">Nơi đến</th></tr>`;
+        for (let i = 0; i < danhSachChuyenBay.length; i++) {
+            danhSach += `<tr style="background: lightcyan" align="center"><td style="font-weight: bold">${i + 1}</td><td>${danhSachChuyenBay[i].getMachuyenBay()}</td><td>${danhSachChuyenBay[i].getNgayBay()}
+</td><td>${danhSachChuyenBay[i].getGioBay()}</td><td>${danhSachChuyenBay[i].getNoiDi()}</td><td>${danhSachChuyenBay[i].getNoiDen()}</td></tr>`;
+        }
+        document.getElementById("danhSach").innerHTML = danhSach;
+    }
+
+    hienThiDanhSach();
+
+    function xoaChuyenBay() {
+        let ma = prompt("nhập mã chuyến bay cần xóa");
+        let viTri;
+        let flag = false;
+        for (let i = 0; i < danhSachChuyenBay.length; i++) {
+            if (danhSachChuyenBay[i].getMachuyenBay() === ma) {
+                viTri = i;
+                flag = true;
+                break;
+            }
+        }
+        if (flag) {
+            danhSachChuyenBay.splice(viTri, 1);
+        } else {
+            alert("không tìm thấy");
+        }
+        hienThiDanhSach();
+    }
+</script>
+</body>
+</html>
