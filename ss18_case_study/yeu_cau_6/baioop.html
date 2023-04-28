@@ -65,10 +65,10 @@
 
     }
 
-    function deleteEmployee(index){
-        let conf = confirm('do you want to delete it?'+ employeeList[index].getName());
-        if (conf){
-            employeeList.splice(index,1);
+    function deleteEmployee(index) {
+        let conf = confirm('do you want to delete it?' + employeeList[index].getName());
+        if (conf) {
+            employeeList.splice(index, 1);
         }
         display(employeeList);
     }
@@ -90,7 +90,7 @@
                 '        <td>' + list[i].getName() + '</td>\n' +
                 '        <td>' + list[i].getAddress() + '</td>\n' +
                 '        <td><button>Edit</button></td>\n' +
-                '        <td><button onclick="deleteEmployee('+i+')">Delete</button></td>\n' +
+                '        <td><button onclick="deleteEmployee(' + i + ')">Delete</button></td>\n' +
                 '    </tr>';
         }
         tableString += '</table>';
